@@ -1,0 +1,15 @@
+Html代码
+<html>
+<head>
+<title>浮动窗口</title>
+<link type="text/css" rel="stylesheet" href="css/overflow.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/overflow.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+var b = $("#b");
+var overFlow = $("#over");
+b.click(function(){
+overFlow.fadeIn();
+$("#mask").css("background","#111");
+$("#mask").css("opacity","0.8");
